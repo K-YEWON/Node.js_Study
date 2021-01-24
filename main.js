@@ -1,4 +1,4 @@
-//라우팅 해보기
+//간단한 웹서버 제작
 const http = require("http");
 
 let server = http.createServer(function (requrest, response) {
