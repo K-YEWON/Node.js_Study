@@ -1,7 +1,8 @@
-//URL 쪼개기
-let url = new URL('http://example.com/business/mart/item?category=14&id=2965');
+//라우팅 해보기
+const http = require("http");
 
-console.log(url.protocol);
-console.log(url.host);
-console.log(url.pathname);
-console.log(url.search);
+let server = http.createServer(function (requrest, response) {
+    response.end('<h1>Hello World!</h1>');
+});
+
+server.listen(3000);
