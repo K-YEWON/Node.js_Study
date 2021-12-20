@@ -16,6 +16,7 @@ app.get('/users', (request, response) => {
 });
 
 app.get('/users/:id', (request, response) => {
+    //console.log(request.params);
     const userName = users[request.params.id - 1];
     response.end(`<h1>${userName}</h1>`);
 });
